@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('Orbitron.ttf');
+}
+
+body{
+    background-color: black;
+}
+
+#scene{
+    position: relative;
+    background: url("index.jpg");
+    width: 1332px;
+    height: 850px;
+}
+
+h1{
+    color: white;
+    margin-left: 1382px;
+    font-size: 48pt;
+    font-family: 'Orbitron';
+}
+
+#description{
+    color: white;
+    width: 500px;
+    margin-left: 1382px;
+    font-size: 12pt;
+    font-family: 'Orbitron';
+}
+
+button{
+    font-size: 25px;
+    font-family: 'Orbitron';
+    border-radius: 15%;
+    width: 200px;
+    cursor: pointer;
+    margin: 20px;
+    transition: 1s all ease;
+}
+
+#left{
+    position: absolute;
+    bottom: 4em;
+    left: 10em;
+}
+
+#right{
+    position: absolute;
+    bottom: 4em;
+    right: 10em;
+}
+
+#right:hover::after{
+    transition: 1s all ease;
+    content: "\21C0";
+    padding-left: 15px; 
+}
+
+#left:hover::before{
+    transition: 1s all ease;
+    content: "\21BC";
+    padding-right: 15px;
+}
+
+#right span:hover{
+    transition: 1s all ease-out;
+    padding-left: 30px;
+}
+
+#left span:hover{
+    transition: 1s all ease-out;
+    padding-right: 30px;
+}
